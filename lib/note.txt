@@ -1,0 +1,70 @@
+// Center(
+// child: Column(
+// mainAxisAlignment: MainAxisAlignment.center,
+// children: [
+// Text(text1 + text2),
+// Container(
+// color: Colors.blue,
+// child: TextButton(
+// onPressed: () {
+// Navigator.pop(
+// context,
+// MaterialPageRoute(
+// builder: (context) => FirstPage(),
+// ),
+// );
+// },
+// child: Text(
+// 'Go First Page',
+// style: TextStyle(color: Colors.white),
+// )),
+// )
+// ],
+// ),
+// ),
+
+
+// Center(
+// child: Column(
+// mainAxisAlignment: MainAxisAlignment.center,
+// children: [
+// TextField(
+// controller: text1,
+// obscureText: false,
+// decoration: InputDecoration(
+// border: OutlineInputBorder(),
+// labelText: 'Input a',
+// ),
+// ),
+// SizedBox(height: 10,),
+// TextField(
+// controller: text2,
+// obscureText: false,
+// decoration: InputDecoration(
+// border: OutlineInputBorder(),
+// labelText: 'Input b',
+// ),
+// ),
+// Container(
+// color: Colors.blue,
+// child: TextButton(
+// onPressed: () {
+// Navigator.push(
+// context,
+// MaterialPageRoute(
+// builder: (context) => SecondPage(
+// text1: text1.text,
+// text2: text2.text,
+// ),
+// ),
+// );
+// },
+// child: Text(
+// 'Go Second Page',
+// style: TextStyle(color: Colors.white),
+// ),
+// ),
+// ),
+// ],
+// ),
+// ),
